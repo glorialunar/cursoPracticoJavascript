@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+:root{
+    --primerColor: #1C658C;
+    --segundoColor: #398AB9;
+    --tercerColor: #D8D2CB;
+    --cuartoColor: #EEEEEE;
+    --blanco: #ffffff;
+    --negro: #000000;
+}
+
+header{
+    align-items: center;
+    background-color: var(--primerColor);
+    display: flex;
+    flex-direction: column;
+    height: 6rem;
+    justify-content: center;
+    width: 100%;
+}
+
+header h1{
+    color: var(--tercerColor);
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+header p{
+    color: var(--cuartoColor);
+    font-size: 1.2rem;
+}
+
+.contenedor{
+    background-color: var(--segundoColor);
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem 1.5rem;
+    height: auto;
+}
+
+.contenedorDeCajitas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cuadrado, .triangulo, .circulo{
+    align-items: center;
+    background-color: var(--tercerColor);
+    border: 0.1rem solid var(--segundoColor);
+    border-radius: 1rem;
+    color: var(--primerColor);
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 2rem;
+    padding: 0.2rem;
+}
+
+h2{
+    font-size: 1.8rem;
+    margin: 0.4rem 4rem;
+    text-align: center;
+}
+
+form{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+label {
+    color: var(--segundoColor);
+    font-size: 1.3rem;
+    font-weight:bold;
+    margin: 0.8rem;
+    text-align: center;
+}
+
+input {
+    border: 0.1 solid var(--blanco);
+    border-radius: 0.8rem;
+    font-size: 1.3rem;
+    margin: 0.4rem;
+    padding: 0.4rem;
+    width: 10rem;
+}
+
+.contenedorBotones{
+    display: flex;
+    margin: 1.2rem;
+}
+
+.botonPerimetro, .botonArea{
+    background-color: var(--segundoColor);
+    border: 0.2rem solid var(--tercerColor);
+    border-radius: 1rem;
+    box-shadow: none;
+    color: var(--cuartoColor);
+    margin: 1rem;
+    padding: 0.4rem;
+}
+
+footer{
+    background-color: var(--cuartoColor);
+}
+
+footer ul{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+a img{
+    height: 5rem;
+    margin: 1rem;
+    width: 5rem;
+}
+
+@media(min-width: 840px){
+    header{
+        height: 15vh;
+    }
+
+    header h1{
+        font-size: 4rem;
+    }
+
+    header p{
+        font-size: 2rem;
+    }
+    .contenedor{
+        height: 75vh;
+        justify-content: center;
+    }
+}
+
+@media(min-width: 1260px){
+    .cuadrado, .triangulo, .circulo{
+        margin: 0.4rem;
+    }
+}

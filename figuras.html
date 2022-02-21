@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./figuras.css">
+    <title>Figuras geométricas</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Figuras geométricas
+        </h1>
+
+        <p>
+            Este es el primer taller del curso práctico de JavaScript
+        </p>
+    </header>
+    
+    <main class="contenedor">
+        <div class="contenedorDeCajitas">
+            <section class="cuadrado">
+                <h2>
+                    Calcula el área y perímetro de tu cuadrado
+                </h2>
+
+                <form class="formularioDelCuadrado">
+                    <label for="cuadrado">
+                        Lado de tu cuadrado:
+                    </label>
+                    <input type="number" id="cuadrado">
+
+                    <div class="contenedorBotones">
+                        <button type="button" class="botonPerimetro" onclick="calcularPerimetroCuadrado()">
+                            Calcular el perímetro
+                        </button>
+
+                        <button type="button" class="botonArea" onclick="calcularAreaCuadrado()">
+                            Calcular el área
+                        </button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="triangulo">
+                <h2>
+                    Calcula el área y perímetro de tu triángulo
+                </h2>
+
+                <form>
+                    <label for="lado1Triangulo">
+                        Primer lado de tu triángulo:
+                    </label>
+                    <input type="number" id="lado1Triangulo">
+
+                    <label for="lado2Triangulo">
+                        Segundo lado de tu triángulo:
+                    </label>
+                    <input type="number" id="lado2Triangulo">
+
+                    <label for="baseTriangulo">
+                        Base de tu triángulo:
+                    </label>
+                    <input type="number" id="baseTriangulo">
+
+                    <label for="alturaTriangulo">
+                        Altura de tu triángulo:
+                    </label>
+                    <input type="number" id="alturaTriangulo">
+
+                    <div class="contenedorBotones">
+                        <button type="button" class="botonPerimetro" onclick="calcularPerimetroTriangulo()">
+                            Calcular el perímetro
+                        </button>
+
+                        <button type="button" class="botonArea" onclick="calcularAreaTriangulo()">
+                            Calcular el área
+                        </button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="circulo">
+                <h2>
+                    Calcula el área y perímetro de tu circulo
+                </h2>
+
+                <form>
+                    <label for="radioCirculo">
+                        Por favor, escribe de cuánto es el radio de tu circulo:
+                    </label>
+                    <input type="number" id="radioCirculo">
+
+                    <div class="contenedorBotones">
+                        <button type="button" class="botonPerimetro" onclick="calcularPerimetroCirculo()">
+                            Calcular el perímetro
+                        </button>
+
+                        <button type="button" class="botonArea" onclick="calcularAreaCirculo()">
+                            Calcular el área
+                        </button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <ul>
+            <li>
+                <a href="https://github.com/glorialunar" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Logo de github">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/glunar/" target="_blank">
+                    <img src="https://cdn.icon-icons.com/icons2/2428/PNG/512/linkedin_black_logo_icon_147114.png" alt="Logo de Linkedin">
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <script src="./figuras.js"></script>
+</body>
+</html>
